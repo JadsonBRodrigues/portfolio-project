@@ -41,3 +41,24 @@ iframe#tela {position: relative;
             height: 399px;
 
 }
+
+
+section#meusprojetos {text-align: right;
+                     display:  flex;
+                    flex-direction:  column;
+                        }
+
+section#meusprojetos > a > img {width: 60px;
+                                margin: 10px;
+                                border-radius: 50%;
+                                box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.486);
+                                box-sizing: border-box;
+}
+
+section#meusprojetos img:hover {border: 1px solid rgba(255, 255, 255, 0.76);
+                                transform: translate(-3px -3px);
+                                box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.486);
+                                transition-duration: 0.2s; 
+
+
+}
