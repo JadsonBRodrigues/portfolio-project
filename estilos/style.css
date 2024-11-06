@@ -56,9 +56,8 @@ section#meusprojetos > a > img {width: 60px;
 }
 
 section#meusprojetos img:hover {border: 1px solid rgba(255, 255, 255, 0.76);
-                                transform: translate(-3px -3px);
                                 box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.486);
-                                transition-duration: 0.2s; 
+                                transition-duration: .5s; 
 
 
 }
