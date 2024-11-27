@@ -43,6 +43,13 @@ section#meusprojetos > a > img
         margin-top: 870%;
 }
 
+section#meusprojetos > a > img#home 
+{
+   width: 40px;
+  
+}
+
+
 
 
 
