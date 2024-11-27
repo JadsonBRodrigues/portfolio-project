@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px)
+{
+    iframe#tela {
+    position: relative;
+    top: 102px;
+    left: 41px;
+    width: 228px;
+    height: 401px;
+
+}
+
+}
