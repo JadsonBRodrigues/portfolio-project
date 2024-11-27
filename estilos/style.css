@@ -47,7 +47,9 @@ section#meusprojetos {text-align: right;
                      display:  flex;
                      flex-direction:  column;
                      justify-content: center;
-}
+                     align-items: 
+
+                        }
 
 section#meusprojetos > a > img {width: 60px;
                                 margin: 10px;
@@ -58,7 +60,7 @@ section#meusprojetos > a > img {width: 60px;
 
 section#meusprojetos > a > img#home 
 {
-   width: 56px;
+   width: 57px;
 }
 
 section#meusprojetos img:hover {border: 1px solid rgba(255, 255, 255, 0.76);
