@@ -46,6 +46,9 @@ iframe#tela {position: relative;
 section#meusprojetos {text-align: right;
                      display:  flex;
                      flex-direction:  column;
+                     justify-content: center;
+                     align-items: 
+
                         }
 
 section#meusprojetos > a > img {width: 60px;

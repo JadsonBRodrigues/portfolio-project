@@ -23,6 +23,21 @@
     height: 338px;
 }
 
+section#meusprojetos {
+    text-align: right;
+    display:  flex;
+    flex-direction: row;
+       }
+
+section#meusprojetos > a > img 
+
+{       display: flex;
+        width: 40px;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.486);
+        box-sizing: border-box;
+}
 
 
 
