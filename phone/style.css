@@ -3,6 +3,13 @@
 @media screen and (max-width: 768px)
 
 {
+    body
+    {display: flex;
+    flex-flow: column;
+    }
+
+
+
     section#telefone {position: absolute;
         height: 600px;
         width: 311px;
@@ -27,10 +34,13 @@ section#meusprojetos {
     text-align: right;
     display:  flex;
     flex-flow: row nowrap;
-    align-items: center;
-    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    height: 550px;
+    
     
        }
+
 
 section#meusprojetos > a > img 
 
@@ -40,13 +50,13 @@ section#meusprojetos > a > img
         border-radius: 50%;
         box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.486);
         box-sizing: border-box;
-        margin-top: 870%;
+    
 }
 
 section#meusprojetos > a > img#home 
 {
    width: 40px;
-  
+  */
 }
 
 
