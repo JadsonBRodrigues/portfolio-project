@@ -3,6 +3,7 @@
 @media screen and (max-width: 768px)
 
 {
+
     section#telefone {position: absolute;
         height: 600px;
         width: 311px;
@@ -39,11 +40,6 @@ section#meusprojetos > a > img#home
    width: 40px;
   
 }
-
-
-
-
-
 
 
 }
