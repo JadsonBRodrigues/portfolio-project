@@ -26,7 +26,10 @@
 section#meusprojetos {
     text-align: right;
     display:  flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: flex-end;
+    
        }
 
 section#meusprojetos > a > img 
