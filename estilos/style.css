@@ -63,6 +63,14 @@ section#meusprojetos > a > img#home
    width: 57px;
 }
 
+section#meusprojetos > a.disabled {
+
+  pointer-events: none; /* Impede o clique */
+  opacity: 0.5; /* Deixa o botão com aparência desativada */
+  cursor: default;
+
+}
+
 section#meusprojetos img:hover {border: 1px solid rgba(255, 255, 255, 0.76);
                                 box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.486);
                                 transition-duration: .5s; 
