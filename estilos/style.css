@@ -10,7 +10,7 @@ html, body {height: 100vh;
             background-color: grey;
 }
 
-body {background: url('../imagens/fundo-madeira1.jpg') no-repeat top left;
+body {background: url('../imagens/fundo-madeira.jpg') no-repeat top left;
     background-size: cover;
     background-attachment: fixed;
 
