@@ -57,7 +57,7 @@ a:hover {
    HEADER / HOME
 ========================================= */
 
-.header-tops {
+..header-tops {
     position: relative;
     z-index: 10;
     width: 100%;
@@ -67,7 +67,7 @@ a:hover {
     align-items: center;
     justify-content: center;
 
-    text-align: left;
+    text-align: center;
 
     background:
         radial-gradient(
@@ -84,9 +84,14 @@ a:hover {
     z-index: 2;
 
     width: 100%;
+    max-width: 1200px;
 
     padding-top: 30px;
     padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -158,6 +163,7 @@ a:hover {
     flex-wrap: wrap;
 
     align-items: center;
+    justify-content: center;
 
     gap: 25px;
 
@@ -224,9 +230,8 @@ a:hover {
 
 .social-links {
     display: flex;
-
     align-items: center;
-
+    justify-content: center;
     gap: 15px;
 }
 
