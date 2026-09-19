@@ -28,15 +28,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100vw;
     height: 100vh;
-
     z-index: 0;
-
     display: block;
     pointer-events: none;
-
     opacity: 0.38;
 }
 
@@ -48,7 +44,6 @@ body {
 .header-tops {
     position: relative;
     z-index: 1;
-
     width: 100%;
     min-height: 100vh;
 
@@ -58,23 +53,13 @@ body {
 
     text-align: center;
 
-    /*
-     * Fundo transparente para o Matrix
-     * continuar visível atrás do conteúdo.
-     */
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(0, 0, 0, 0.15) 0%,
-            rgba(0, 0, 0, 0.35) 45%,
-            rgba(0, 0, 0, 0.65) 100%
-        );
+    background: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0.35) 45%,
+        rgba(0, 0, 0, 0.65) 100%
+    );
 }
-
-
-/* =========================================================
-   HEADER CONTAINER
-========================================================= */
 
 .header-tops .container {
     position: relative;
@@ -87,17 +72,11 @@ body {
     justify-content: center;
 }
 
-
-/* =========================================================
-   HOME CONTENT
-========================================================= */
-
 .home-content {
     width: 100%;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
@@ -113,10 +92,8 @@ body {
     margin: 0;
 
     font-family: "Poppins", sans-serif;
-
     font-size: 48px;
     font-weight: 700;
-
     line-height: 1.2;
 
     color: #fff;
@@ -130,7 +107,7 @@ body {
 
 
 /* =========================================================
-   SUBTITLE
+   SUBTITLE / TYPED TEXT
 ========================================================= */
 
 .header-tops h2 {
@@ -138,56 +115,39 @@ body {
     margin-bottom: 0;
 
     font-family: "Raleway", sans-serif;
-
     font-size: 24px;
     font-weight: 400;
-
     line-height: 1.5;
 
-    /*
-     * Verde
-     */
-    color: #00ff46 !important;
+    color: #fff !important;
 }
 
 
-/* =========================================================
-   "I'M A"
-========================================================= */
+/* Apenas o "I'm" fica verde */
 
 .header-tops h2 .intro-green {
     color: #00ff46 !important;
-
     font-weight: 500;
 }
 
 
-/* =========================================================
-   TYPED TEXT
-========================================================= */
+/* Texto digitado fica branco */
 
 .header-tops h2 .typed {
-    color: #00ff46 !important;
-
+    color: #fff !important;
     font-weight: 500;
 }
 
 
-/* =========================================================
-   TYPED CURSOR
-========================================================= */
+/* Cursor do texto digitado */
 
 .typed-cursor {
-    color: #00ff46;
-
+    color: #fff;
     font-weight: 400;
-
     animation: blink 0.8s infinite;
 }
 
-
 @keyframes blink {
-
     0% {
         opacity: 1;
     }
@@ -199,7 +159,6 @@ body {
     100% {
         opacity: 1;
     }
-
 }
 
 
@@ -209,15 +168,12 @@ body {
 
 .nav-menu {
     width: 100%;
-
     margin-top: 35px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
-
 
 .nav-menu ul {
     margin: 0;
@@ -226,20 +182,16 @@ body {
     list-style: none;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     flex-wrap: wrap;
-
     gap: 30px;
 }
-
 
 .nav-menu li {
     position: relative;
 }
-
 
 .nav-menu a {
     position: relative;
@@ -249,17 +201,13 @@ body {
     padding: 5px 0;
 
     color: #fff;
-
     text-decoration: none;
 
     font-family: "Raleway", sans-serif;
-
     font-size: 15px;
-
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 0.5px;
 
     transition:
@@ -267,6 +215,8 @@ body {
         text-shadow 0.3s ease;
 }
 
+
+/* Linha verde por baixo */
 
 .nav-menu a::after {
     content: "";
@@ -286,14 +236,12 @@ body {
     transition: width 0.3s ease;
 }
 
-
 .nav-menu a:hover {
     color: #00ff46;
 
     text-shadow:
         0 0 8px rgba(0, 255, 70, 0.6);
 }
-
 
 .nav-menu a:hover::after {
     width: 100%;
@@ -308,20 +256,17 @@ body {
     margin-top: 30px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
     gap: 15px;
 }
 
-
 .social-links a {
     width: 40px;
     height: 40px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -338,11 +283,9 @@ body {
     transition: all 0.3s ease;
 }
 
-
 .social-links a i {
     font-size: 21px;
 }
-
 
 .social-links a:hover {
     color: #00ff46;
@@ -374,7 +317,6 @@ body {
     height: 45px;
 
     display: none;
-
     align-items: center;
     justify-content: center;
 
@@ -391,7 +333,6 @@ body {
 
     transition: 0.3s;
 }
-
 
 .mobile-nav-toggle:hover {
     color: #00ff46;
@@ -412,13 +353,11 @@ body {
     color: #fff;
 }
 
-
 .inner-header {
     max-width: 1100px;
 
     margin: 0 auto;
 }
-
 
 .back-home {
     display: inline-block;
@@ -430,17 +369,14 @@ body {
     text-decoration: none;
 
     font-size: 14px;
-
     font-weight: 600;
 
     transition: 0.3s;
 }
 
-
 .back-home:hover {
     color: #00ff46;
 }
-
 
 .page-section {
     max-width: 1100px;
@@ -448,21 +384,17 @@ body {
     margin: 0 auto;
 }
 
-
 .page-label {
     margin-bottom: 10px;
 
     color: #00ff46;
 
     font-size: 14px;
-
     font-weight: 600;
 
     text-transform: uppercase;
-
     letter-spacing: 2px;
 }
-
 
 .page-title {
     margin-bottom: 40px;
@@ -470,7 +402,6 @@ body {
     font-family: "Poppins", sans-serif;
 
     font-size: 38px;
-
     font-weight: 700;
 
     color: #fff;
@@ -478,55 +409,10 @@ body {
 
 
 /* =========================================================
-   EDUCATION
+   EDUCATION / EXPERIENCE
 ========================================================= */
 
-.education-item {
-    position: relative;
-
-    margin-bottom: 35px;
-
-    padding-left: 25px;
-
-    border-left: 2px solid rgba(0, 255, 70, 0.5);
-}
-
-
-.education-item h3 {
-    margin-bottom: 8px;
-
-    color: #fff;
-
-    font-size: 21px;
-
-    font-weight: 600;
-}
-
-
-.education-item h4 {
-    margin-bottom: 10px;
-
-    color: #00ff46;
-
-    font-size: 15px;
-
-    font-weight: 500;
-}
-
-
-.education-item p {
-    margin-bottom: 8px;
-
-    color: #ccc;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   EXPERIENCE
-========================================================= */
-
+.education-item,
 .experience-item {
     position: relative;
 
@@ -537,29 +423,27 @@ body {
     border-left: 2px solid rgba(0, 255, 70, 0.5);
 }
 
-
+.education-item h3,
 .experience-item h3 {
     margin-bottom: 8px;
 
     color: #fff;
 
     font-size: 21px;
-
     font-weight: 600;
 }
 
-
+.education-item h4,
 .experience-item h4 {
     margin-bottom: 10px;
 
     color: #00ff46;
 
     font-size: 15px;
-
     font-weight: 500;
 }
 
-
+.education-item p,
 .experience-item p {
     margin-bottom: 8px;
 
@@ -570,22 +454,16 @@ body {
 
 
 /* =========================================================
-   GENERAL TEXT
+   GENERAL
 ========================================================= */
 
 p {
     line-height: 1.7;
 }
 
-
 a {
     transition: 0.3s;
 }
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
 
 footer {
     padding: 25px;
@@ -598,7 +476,6 @@ footer {
 
     font-size: 13px;
 }
-
 
 footer a {
     color: #00ff46;
@@ -624,7 +501,6 @@ footer a {
     .nav-menu ul {
         gap: 22px;
     }
-
 }
 
 
@@ -638,20 +514,17 @@ footer a {
         padding: 30px 20px;
     }
 
-
     .header-tops h1 {
         font-size: 36px;
     }
 
-
     .header-tops h2 {
         font-size: 19px;
-
         max-width: 90%;
     }
 
 
-    /* Mobile navigation */
+    /* Menu lateral */
 
     .nav-menu {
         position: fixed;
@@ -670,14 +543,12 @@ footer a {
 
         background: rgba(0, 0, 0, 0.96);
 
-        border-left:
-            1px solid rgba(0, 255, 70, 0.25);
+        border-left: 1px solid rgba(0, 255, 70, 0.25);
 
         z-index: 9998;
 
         transition: right 0.3s ease;
     }
-
 
     .nav-menu ul {
         flex-direction: column;
@@ -688,21 +559,23 @@ footer a {
         gap: 20px;
     }
 
-
     .nav-menu a {
         font-size: 15px;
     }
 
+
+    /* Botão mobile */
 
     .mobile-nav-toggle {
         display: flex;
     }
 
 
+    /* Quando menu está aberto */
+
     body.mobile-nav-active {
         overflow: hidden;
     }
-
 
     body.mobile-nav-active .nav-menu {
         right: 0;
@@ -713,11 +586,9 @@ footer a {
         margin-top: 25px;
     }
 
-
     .page-title {
         font-size: 30px;
     }
-
 }
 
 
@@ -731,19 +602,15 @@ footer a {
         font-size: 31px;
     }
 
-
     .header-tops h2 {
         font-size: 17px;
     }
-
 
     .nav-menu {
         width: 250px;
     }
 
-
     .page-title {
         font-size: 27px;
     }
-
 }
