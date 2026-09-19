@@ -1,4 +1,13 @@
 /* =========================================================
+   CORES
+========================================================= */
+
+:root {
+    --matrix-color: rgba(39, 109, 143, 0.65);
+}
+
+
+/* =========================================================
    RESET
 ========================================================= */
 
@@ -28,12 +37,17 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100vw;
     height: 100vh;
+
     z-index: 0;
+
     display: block;
+
     pointer-events: none;
-    opacity: 0.38;
+
+    opacity: 1;
 }
 
 
@@ -44,6 +58,7 @@ body {
 .header-tops {
     position: relative;
     z-index: 1;
+
     width: 100%;
     min-height: 100vh;
 
@@ -92,8 +107,10 @@ body {
     margin: 0;
 
     font-family: "Poppins", sans-serif;
+
     font-size: 48px;
     font-weight: 700;
+
     line-height: 1.2;
 
     color: #fff;
@@ -115,15 +132,17 @@ body {
     margin-bottom: 0;
 
     font-family: "Raleway", sans-serif;
+
     font-size: 24px;
     font-weight: 400;
+
     line-height: 1.5;
 
     color: #fff !important;
 }
 
 
-/* Apenas o "I'm" fica verde */
+/* Apenas "I'm" fica verde */
 
 .header-tops h2 .intro-green {
     color: #00ff46 !important;
@@ -139,11 +158,13 @@ body {
 }
 
 
-/* Cursor do texto digitado */
+/* Cursor */
 
 .typed-cursor {
     color: #fff;
+
     font-weight: 400;
+
     animation: blink 0.8s infinite;
 }
 
@@ -168,6 +189,7 @@ body {
 
 .nav-menu {
     width: 100%;
+
     margin-top: 35px;
 
     display: flex;
@@ -186,6 +208,7 @@ body {
     justify-content: center;
 
     flex-wrap: wrap;
+
     gap: 30px;
 }
 
@@ -201,22 +224,22 @@ body {
     padding: 5px 0;
 
     color: #fff;
+
     text-decoration: none;
 
     font-family: "Raleway", sans-serif;
+
     font-size: 15px;
     font-weight: 600;
 
     text-transform: uppercase;
+
     letter-spacing: 0.5px;
 
     transition:
         color 0.3s ease,
         text-shadow 0.3s ease;
 }
-
-
-/* Linha verde por baixo */
 
 .nav-menu a::after {
     content: "";
@@ -317,10 +340,12 @@ body {
     height: 45px;
 
     display: none;
+
     align-items: center;
     justify-content: center;
 
     border: 0;
+
     border-radius: 5px;
 
     background: rgba(0, 0, 0, 0.75);
@@ -393,6 +418,7 @@ body {
     font-weight: 600;
 
     text-transform: uppercase;
+
     letter-spacing: 2px;
 }
 
@@ -520,6 +546,7 @@ footer a {
 
     .header-tops h2 {
         font-size: 19px;
+
         max-width: 90%;
     }
 
@@ -571,7 +598,7 @@ footer a {
     }
 
 
-    /* Quando menu está aberto */
+    /* Menu aberto */
 
     body.mobile-nav-active {
         overflow: hidden;
