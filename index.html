@@ -5,72 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jadson Falcão | Network & IT</title>
+    <title>Jadson Rodrigues | Network & IT</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Boxicons -->
-    <link
-        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- CSS principal -->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         MATRIX BACKGROUND
-    ========================== -->
-
+    <!-- Matrix Background -->
     <canvas id="matrix-canvas"></canvas>
 
-
-    <!-- =========================
-         MOBILE MENU BUTTON
-    ========================== -->
-
+    <!-- Mobile Menu Button -->
     <button class="mobile-nav-toggle" aria-label="Abrir menu">
         <i class="bx bx-menu"></i>
     </button>
 
-
     <!-- =========================
-         HEADER / HOME
+         HOME
     ========================== -->
-
     <header class="header-tops">
 
         <div class="container">
 
             <div class="home-content">
 
+                <!-- Nome -->
                 <h1>Jadson Rodrigues</h1>
 
+                <!-- Profissão / Área -->
                 <h2>
                     <span class="intro-green">I'm</span>
                     <span
-                    class="typed"
-                    data-typed-items="a Network Specialist,a Systems Professional,an IT Infrastructure Enthusiast">
+                        class="typed"
+                        data-typed-items="a Network Specialist,a Systems Professional,an IT Infrastructure Enthusiast">
                     </span>
                 </h2>
 
-                
-
-
-                <!-- =========================
-                     NAVIGATION
-                ========================== -->
-
+                <!-- Menu -->
                 <nav class="nav-menu">
 
                     <ul>
@@ -107,28 +88,24 @@
 
                 </nav>
 
-
-                <!-- =========================
-                     SOCIAL LINKS
-                ========================== -->
-
+                <!-- Redes sociais -->
                 <div class="social-links">
 
+                    <!-- GitHub -->
                     <a
                         href="https://github.com/JadsonBRodrigues"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="GitHub"
-                    >
+                        aria-label="GitHub">
                         <i class="bx bxl-github"></i>
                     </a>
 
+                    <!-- LinkedIn -->
                     <a
                         href="https://www.linkedin.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="LinkedIn"
-                    >
+                        aria-label="LinkedIn">
                         <i class="bx bxl-linkedin"></i>
                     </a>
 
@@ -142,10 +119,13 @@
 
 
     <!-- =========================
-         TYPED.JS
+         JAVASCRIPT
     ========================== -->
-
     <script>
+
+        /* =========================================
+           TYPED TEXT EFFECT
+        ========================================== */
 
         document.addEventListener("DOMContentLoaded", function () {
 
@@ -212,9 +192,9 @@
             }
 
 
-            /* =========================
+            /* =========================================
                MOBILE MENU
-            ========================== */
+            ========================================== */
 
             const menuButton =
                 document.querySelector(".mobile-nav-toggle");
@@ -277,9 +257,9 @@
         });
 
 
-        /* =========================
-           MATRIX EFFECT
-        ========================== */
+        /* =========================================
+           MATRIX BACKGROUND
+        ========================================== */
 
         const canvas =
             document.getElementById("matrix-canvas");
@@ -290,18 +270,22 @@
         let width;
         let height;
 
-        let fontSize = 16;
+        const fontSize = 16;
 
         let columns;
         let drops;
 
 
+        /* Redimensionar Matrix */
+
         function resizeMatrix() {
 
-            width = canvas.width =
+            width =
+                canvas.width =
                 window.innerWidth;
 
-            height = canvas.height =
+            height =
+                canvas.height =
                 window.innerHeight;
 
             columns =
@@ -309,7 +293,11 @@
 
             drops = [];
 
-            for (let i = 0; i < columns; i++) {
+            for (
+                let i = 0;
+                i < columns;
+                i++
+            ) {
 
                 drops[i] =
                     Math.floor(
@@ -331,6 +319,8 @@
         );
 
 
+        /* Caracteres Matrix */
+
         const matrixCharacters =
             "アァカサタナハマヤャラワガザダバパ" +
             "0123456789" +
@@ -340,15 +330,17 @@
             "01";
 
 
+        /* Desenhar Matrix */
+
         function drawMatrix() {
 
             /*
-             * Fundo transparente/preto muito subtil.
-             * Isto cria o efeito de rasto.
+             * Fundo preto ligeiramente transparente.
+             * Cria o efeito de rasto dos caracteres.
              */
 
             ctx.fillStyle =
-                "rgba(0, 0, 0, 0.06)";
+                "rgba(0,0,0,0.06)";
 
             ctx.fillRect(
                 0,
@@ -358,11 +350,31 @@
             );
 
 
+            /* Fonte */
+
             ctx.font =
                 fontSize + "px monospace";
 
 
-            for (let i = 0; i < drops.length; i++) {
+            /* Cor definida no CSS */
+
+            const matrixColor =
+                getComputedStyle(
+                    document.documentElement
+                )
+                .getPropertyValue(
+                    "--matrix-color"
+                )
+                .trim();
+
+
+            /* Colunas */
+
+            for (
+                let i = 0;
+                i < drops.length;
+                i++
+            ) {
 
                 const character =
                     matrixCharacters[
@@ -373,12 +385,8 @@
                     ];
 
 
-                /*
-                 * Verde Matrix
-                 */
-
                 ctx.fillStyle =
-                    "rgba(0, 255, 70, 0.75)";
+                    matrixColor;
 
 
                 ctx.fillText(
@@ -388,13 +396,10 @@
                 );
 
 
-                /*
-                 * Reinicia a coluna
-                 */
+                /* Reiniciar coluna */
 
                 if (
-                    drops[i] * fontSize >
-                        height &&
+                    drops[i] * fontSize > height &&
                     Math.random() > 0.975
                 ) {
 
@@ -410,9 +415,7 @@
         }
 
 
-        /*
-         * Velocidade do Matrix
-         */
+        /* Velocidade da Matrix */
 
         setInterval(
             drawMatrix,
