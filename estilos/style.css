@@ -161,15 +161,18 @@ body {
     color: #fff;
 }
 
+/* =========================================================
+   INTRO TEXT - GREEN
+========================================================= */
 
-/* Typed text */
+.header-tops h2 .intro-green {
+    color: #00ff46;
+    font-weight: 500;
+}
 
 .header-tops h2 .typed {
-
-    color: #fff;
-
+    color: #00ff46;
     font-weight: 500;
-
 }
 
 
