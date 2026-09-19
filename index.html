@@ -1,113 +1,513 @@
 <!DOCTYPE html>
-
 <html lang="pt-PT">
 
 <head>
 
-```
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jadson Falcão - Portfolio</title>
+    <title>Jadson Falcão - Portfolio</title>
 
-<!-- Google Fonts -->
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@400;500;600&display=swap"
-    rel="stylesheet"
->
 
-<!-- Bootstrap -->
-<link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
->
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
 
-<!-- Boxicons -->
-<link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
->
 
-<!-- CSS -->
-<link rel="stylesheet" href="estilos/style.css">
-```
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- Boxicons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="estilos/style.css"
+    >
 
 </head>
 
+
 <body>
 
-```
-<!-- MATRIX BACKGROUND -->
-<canvas id="matrix-canvas"></canvas>
+
+    <!-- =========================================
+         MATRIX BACKGROUND
+    ========================================== -->
+
+    <canvas id="matrix-canvas"></canvas>
 
 
-<!-- MOBILE MENU BUTTON -->
-<button
-    type="button"
-    class="mobile-nav-toggle"
-    aria-label="Abrir menu"
->
-    <i class="bx bx-menu"></i>
-</button>
+    <!-- =========================================
+         MOBILE MENU BUTTON
+    ========================================== -->
+
+    <button
+        type="button"
+        class="mobile-nav-toggle"
+        aria-label="Abrir menu"
+    >
+
+        <i class="bx bx-menu"></i>
+
+    </button>
 
 
-<!-- HOME -->
-<header class="header-tops">
+    <!-- =========================================
+         HOME
+    ========================================== -->
 
-    <div class="container">
-
-        <!-- NAME -->
-        <h1>Jadson Falcão</h1>
+    <header class="header-tops">
 
 
-        <!-- TYPED TEXT -->
-        <h2>
-            I'm a
-            <span
-                class="typed"
-                data-typed-items="Network Engineer,Network Enthusiast,IT Infrastructure Student,Network Administration Student"
-            ></span>
-        </h2>
+        <div class="container">
 
 
-        <!-- NAVIGATION -->
-        <nav class="nav-menu">
+            <!-- NAME -->
 
-            <ul>
-
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-
-                <li>
-                    <a href="education.html">Education</a>
-                </li>
-
-                <li>
-                    <a href="experience.html">Experience</a>
-                </li>
-
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-
-                <li>
-                    <a href="skills.html">Skills</a>
-                </li>
-
-                <li>
-                    <a href="links.html">Links</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
+            <h1>
+                Jadson Falcão
+            </h1>
 
 
-        <!-- SOCIAL LINKS -->
-```
+            <!-- TYPED TEXT -->
+
+            <h2>
+
+                I'm a
+
+                <span
+                    class="typed"
+                    data-typed-items="Network Engineer,Network Enthusiast,IT Infrastructure Student,Network Administration Student"
+                ></span>
+
+            </h2>
+
+
+            <!-- =========================================
+                 NAVIGATION
+            ========================================== -->
+
+            <nav class="nav-menu">
+
+                <ul>
+
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="education.html">
+                            Education
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="experience.html">
+                            Experience
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="skills.html">
+                            Skills
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="links.html">
+                            Links
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+
+            <!-- =========================================
+                 SOCIAL LINKS
+            ========================================== -->
+
+            <div class="social-links">
+
+
+                <!-- GitHub -->
+
+                <a
+                    href="#"
+                    aria-label="GitHub"
+                    title="GitHub"
+                >
+
+                    <i class="bx bxl-github"></i>
+
+                </a>
+
+
+                <!-- LinkedIn -->
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn"
+                    title="LinkedIn"
+                >
+
+                    <i class="bx bxl-linkedin"></i>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+    <!-- =========================================
+         TYPED.JS
+    ========================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+
+                /* =========================================
+                   TYPED TEXT
+                ========================================== */
+
+                const typedElement =
+                    document.querySelector(".typed");
+
+
+                if (typedElement) {
+
+                    const typedItems =
+                        typedElement
+                            .getAttribute("data-typed-items")
+                            .split(",");
+
+
+                    new Typed(
+                        ".typed",
+                        {
+
+                            strings: typedItems,
+
+                            typeSpeed: 60,
+
+                            backSpeed: 40,
+
+                            backDelay: 1800,
+
+                            loop: true
+
+                        }
+                    );
+
+                }
+
+
+                /* =========================================
+                   MOBILE MENU
+                ========================================== */
+
+                const mobileButton =
+                    document.querySelector(
+                        ".mobile-nav-toggle"
+                    );
+
+
+                const navigation =
+                    document.querySelector(
+                        ".nav-menu"
+                    );
+
+
+                if (
+                    mobileButton &&
+                    navigation
+                ) {
+
+
+                    mobileButton.addEventListener(
+                        "click",
+                        function () {
+
+
+                            navigation.classList.toggle(
+                                "mobile-nav-active"
+                            );
+
+
+                            const icon =
+                                mobileButton.querySelector(
+                                    "i"
+                                );
+
+
+                            if (
+                                navigation.classList.contains(
+                                    "mobile-nav-active"
+                                )
+                            ) {
+
+                                icon.classList.remove(
+                                    "bx-menu"
+                                );
+
+                                icon.classList.add(
+                                    "bx-x"
+                                );
+
+                            }
+
+                            else {
+
+                                icon.classList.remove(
+                                    "bx-x"
+                                );
+
+                                icon.classList.add(
+                                    "bx-menu"
+                                );
+
+                            }
+
+                        }
+                    );
+
+
+                    /* Close menu after clicking a link */
+
+                    const navigationLinks =
+                        navigation.querySelectorAll(
+                            "a"
+                        );
+
+
+                    navigationLinks.forEach(
+                        function (link) {
+
+                            link.addEventListener(
+                                "click",
+                                function () {
+
+                                    navigation.classList.remove(
+                                        "mobile-nav-active"
+                                    );
+
+
+                                    const icon =
+                                        mobileButton.querySelector(
+                                            "i"
+                                        );
+
+
+                                    icon.classList.remove(
+                                        "bx-x"
+                                    );
+
+                                    icon.classList.add(
+                                        "bx-menu"
+                                    );
+
+                                }
+                            );
+
+                        }
+                    );
+
+                }
+
+
+                /* =========================================
+                   MATRIX EFFECT
+                ========================================== */
+
+                const canvas =
+                    document.getElementById(
+                        "matrix-canvas"
+                    );
+
+
+                if (!canvas) {
+                    return;
+                }
+
+
+                const ctx =
+                    canvas.getContext("2d");
+
+
+                const characters =
+                    "01ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+                let width;
+
+                let height;
+
+                let columns;
+
+                let drops;
+
+
+                function resizeMatrix() {
+
+
+                    width =
+                        canvas.width =
+                            window.innerWidth;
+
+
+                    height =
+                        canvas.height =
+                            window.innerHeight;
+
+
+                    const fontSize = 16;
+
+
+                    columns =
+                        Math.floor(
+                            width / fontSize
+                        );
+
+
+                    drops =
+                        Array(columns).fill(1);
+
+                }
+
+
+                function drawMatrix() {
+
+
+                    ctx.fillStyle =
+                        "rgba(0, 0, 0, 0.08)";
+
+
+                    ctx.fillRect(
+                        0,
+                        0,
+                        width,
+                        height
+                    );
+
+
+                    ctx.fillStyle =
+                        "#00ff41";
+
+
+                    ctx.font =
+                        "16px monospace";
+
+
+                    for (
+                        let i = 0;
+                        i < drops.length;
+                        i++
+                    ) {
+
+
+                        const character =
+                            characters[
+                                Math.floor(
+                                    Math.random() *
+                                    characters.length
+                                )
+                            ];
+
+
+                        ctx.fillText(
+                            character,
+                            i * 16,
+                            drops[i] * 16
+                        );
+
+
+                        if (
+                            drops[i] * 16 > height &&
+                            Math.random() > 0.975
+                        ) {
+
+                            drops[i] = 0;
+
+                        }
+
+
+                        drops[i]++;
+
+                    }
+
+                }
+
+
+                resizeMatrix();
+
+
+                window.addEventListener(
+                    "resize",
+                    resizeMatrix
+                );
+
+
+                setInterval(
+                    drawMatrix,
+                    50
+                );
+
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
