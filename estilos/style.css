@@ -115,12 +115,6 @@ a:hover {
     color: #fff;
 }
 
-.header-tops h1::after {
-    content: ".";
-    color: #00ff41;
-}
-
-
 /* =========================================
    SUBTITLE
 ========================================= */
@@ -641,11 +635,27 @@ footer {
         display: flex;
     }
 
-    .header-tops {
-        align-items: flex-start;
+  .header-tops {
+    position: relative;
+    z-index: 10;
 
-        padding-top: 120px;
-    }
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.94)
+        );
+}
 
     .nav-menu {
         position: fixed;
@@ -743,10 +753,19 @@ footer {
 @media (max-width: 480px) {
 
     .header-tops .container {
-        padding-left: 20px;
+    position: relative;
+    z-index: 2;
 
-        padding-right: 20px;
-    }
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
     .header-tops h1 {
         font-size: 44px;
